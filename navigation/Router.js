@@ -2,14 +2,18 @@ import {
   createRouter,
 } from '@exponent/ex-navigation';
 
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import AlertsScreen from '../screens/AlertsScreen';
+import AnswerScreen from '../screens/AnswerScreen';
+import FeedScreen from '../screens/FeedScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import ResourcesScreen from '../screens/ResourcesScreen';
 import RootNavigation from './RootNavigation';
 
 export default createRouter(() => ({
-  home: () => HomeScreen,
-  links: () => LinksScreen,
-  settings: () => SettingsScreen,
+  feed: () => FeedScreen,
+  alerts: () => AlertsScreen,
+  answer: () => AnswerScreen,
+  profile: () => ProfileScreen,
+  resources: () => ResourcesScreen,
   rootNavigation: () => RootNavigation,
 }));

@@ -32,23 +32,36 @@ export default class RootNavigation extends React.Component {
     return (
       <TabNavigation
         tabBarHeight={56}
-        initialTab="home">
+        initialTab="feed">
+
         <TabNavigationItem
-          id="home"
+          id="feed"
           renderIcon={isSelected => this._renderIcon('home', isSelected)}>
-          <StackNavigation initialRoute="home" />
+          <StackNavigation initialRoute="feed" />
         </TabNavigationItem>
 
         <TabNavigationItem
-          id="links"
+          id="answer"
           renderIcon={isSelected => this._renderIcon('book', isSelected)}>
-          <StackNavigation initialRoute="links" />
+          <StackNavigation initialRoute="answer" />
         </TabNavigationItem>
 
         <TabNavigationItem
-          id="settings"
+          id="resourcess"
+          renderIcon={isSelected => this._renderIcon('book', isSelected)}>
+          <StackNavigation initialRoute="resources" />
+        </TabNavigationItem>
+
+        <TabNavigationItem
+          id="profile"
           renderIcon={isSelected => this._renderIcon('cog', isSelected)}>
-          <StackNavigation initialRoute="settings" />
+          <StackNavigation initialRoute="profile" />
+        </TabNavigationItem>
+
+        <TabNavigationItem
+          id="alerts"
+          renderIcon={isSelected => this._renderIcon('cog', isSelected)}>
+          <StackNavigation initialRoute="alerts" />
         </TabNavigationItem>
       </TabNavigation>
     );
