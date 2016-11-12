@@ -7,6 +7,7 @@ import AnswerScreen from '../screens/AnswerScreen';
 import FeedScreen from '../screens/FeedScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import ResourcesScreen from '../screens/ResourcesScreen';
+import VideoPlayerScreen from '../screens/VideoPlayerScreen';
 import RootNavigation from './RootNavigation';
 
 export default createRouter(() => ({
@@ -15,5 +16,6 @@ export default createRouter(() => ({
   answer: () => AnswerScreen,
   profile: () => ProfileScreen,
   resources: () => ResourcesScreen,
+  video: () => VideoPlayerScreen,
   rootNavigation: () => RootNavigation,
 }));
