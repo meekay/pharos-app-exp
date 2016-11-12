@@ -8,6 +8,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  WebView,
 } from 'react-native';
 
 import { MonoText } from '../components/StyledText';
@@ -21,13 +22,8 @@ export default class FeedScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={this.props.route.getContentContainerStyle()}>
-        <Text>
-          Feed content TBD
-        </Text>
-      </ScrollView>
+      <WebView
+        source={require('./feed.html')}/>
     );
   }
 
